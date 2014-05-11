@@ -13,4 +13,3 @@
       - git-core
       - ack-grep
       - python-software-properties
-	tags: core
