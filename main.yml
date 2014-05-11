@@ -1,0 +1,16 @@
+---
+- hosts: "{{ my_hosts }}"
+  vars:
+  remote_user: root
+  sudo: yes
+
+  tasks:
+
+  name: Install core packages
+  apt: name={{ item }} state=present
+  with_items:
+    - curl
+    - unzip
+    - git-core
+    - ack-grep
+    - python-software-properties
